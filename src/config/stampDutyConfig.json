@@ -1,0 +1,612 @@
+{
+  "en-GB": {
+    "england": {
+      "name": "Stamp Duty Land Tax (SDLT)",
+      "description": "A tax paid when purchasing property or land over a certain value in England and Northern Ireland.",
+      "paymentDeadline": "14 days after completion",
+      "officialLink": "https://www.gov.uk/stamp-duty-land-tax",
+      "exemptions": [
+        { "name": "First-time buyers", "description": "No tax on properties up to £425,000" },
+        { "name": "Property transfers due to divorce or dissolution of civil partnership", "description": "No tax payable" },
+        { "name": "Property less than £250,000", "description": "No tax payable on properties below this threshold" }
+      ],
+      "propertyTypes": [
+        { "id": "residential", "name": "Residential", "isDefault": true },
+        { "id": "commercial", "name": "Commercial/Non-residential" },
+        { "id": "mixedUse", "name": "Mixed Use" }
+      ],
+      "standard": [
+        { "threshold": 0, "rate": 0 },
+        { "threshold": 250000, "rate": 5 },
+        { "threshold": 925000, "rate": 10 },
+        { "threshold": 1500000, "rate": 12 }
+      ],
+      "firstTimeBuyer": [
+        { "threshold": 0, "rate": 0 },
+        { "threshold": 425000, "rate": 5 },
+        { "threshold": 925000, "rate": 10 },
+        { "threshold": 1500000, "rate": 12 }
+      ],
+      "additionalProperty": [
+        { "threshold": 0, "rate": 3 },
+        { "threshold": 250000, "rate": 8 },
+        { "threshold": 925000, "rate": 13 },
+        { "threshold": 1500000, "rate": 15 }
+      ],
+      "commercial": [
+        { "threshold": 0, "rate": 0 },
+        { "threshold": 150000, "rate": 2 },
+        { "threshold": 250000, "rate": 5 }
+      ],
+      "mixedUse": [
+        { "threshold": 0, "rate": 0 },
+        { "threshold": 150000, "rate": 2 },
+        { "threshold": 250000, "rate": 5 }
+      ],
+      "historicalRates": [
+        {
+          "startDate": "2021-07-01",
+          "endDate": "2022-09-30",
+          "description": "Standard rates",
+          "standard": [
+            { "threshold": 0, "rate": 0 },
+            { "threshold": 250000, "rate": 5 },
+            { "threshold": 925000, "rate": 10 },
+            { "threshold": 1500000, "rate": 12 }
+          ]
+        },
+        {
+          "startDate": "2020-07-08",
+          "endDate": "2021-06-30",
+          "description": "COVID-19 Stamp Duty Holiday",
+          "standard": [
+            { "threshold": 0, "rate": 0 },
+            { "threshold": 500000, "rate": 5 },
+            { "threshold": 925000, "rate": 10 },
+            { "threshold": 1500000, "rate": 12 }
+          ]
+        }
+      ],
+      "nonResidentSurcharge": 2
+    },
+    "scotland": {
+      "name": "Land and Buildings Transaction Tax (LBTT)",
+      "description": "A tax paid when buying a property or land over a certain price in Scotland.",
+      "paymentDeadline": "30 days after completion",
+      "officialLink": "https://www.revenue.scot/taxes/land-buildings-transaction-tax",
+      "exemptions": [
+        { "name": "First-time buyers", "description": "Relief on properties up to £175,000" },
+        { "name": "Charities", "description": "Charities may claim relief from LBTT when buying land and buildings for charitable purposes" }
+      ],
+      "propertyTypes": [
+        { "id": "residential", "name": "Residential", "isDefault": true },
+        { "id": "commercial", "name": "Commercial/Non-residential" }
+      ],
+      "standard": [
+        { "threshold": 0, "rate": 0 },
+        { "threshold": 145000, "rate": 2 },
+        { "threshold": 250000, "rate": 5 },
+        { "threshold": 325000, "rate": 10 },
+        { "threshold": 750000, "rate": 12 }
+      ],
+      "firstTimeBuyer": [
+        { "threshold": 0, "rate": 0 },
+        { "threshold": 175000, "rate": 2 },
+        { "threshold": 250000, "rate": 5 },
+        { "threshold": 325000, "rate": 10 },
+        { "threshold": 750000, "rate": 12 }
+      ],
+      "additionalProperty": [
+        { "threshold": 0, "rate": 4 },
+        { "threshold": 145000, "rate": 6 },
+        { "threshold": 250000, "rate": 9 },
+        { "threshold": 325000, "rate": 14 },
+        { "threshold": 750000, "rate": 16 }
+      ],
+      "commercial": [
+        { "threshold": 0, "rate": 0 },
+        { "threshold": 150000, "rate": 1 },
+        { "threshold": 250000, "rate": 5 }
+      ],
+      "historicalRates": [
+        {
+          "startDate": "2021-04-01",
+          "endDate": "2022-03-31",
+          "description": "Standard rates",
+          "standard": [
+            { "threshold": 0, "rate": 0 },
+            { "threshold": 145000, "rate": 2 },
+            { "threshold": 250000, "rate": 5 },
+            { "threshold": 325000, "rate": 10 },
+            { "threshold": 750000, "rate": 12 }
+          ]
+        },
+        {
+          "startDate": "2020-07-15",
+          "endDate": "2021-03-31",
+          "description": "COVID-19 LBTT Holiday",
+          "standard": [
+            { "threshold": 0, "rate": 0 },
+            { "threshold": 250000, "rate": 5 },
+            { "threshold": 325000, "rate": 10 },
+            { "threshold": 750000, "rate": 12 }
+          ]
+        }
+      ],
+      "nonResidentSurcharge": 4
+    },
+    "wales": {
+      "name": "Land Transaction Tax (LTT)",
+      "description": "A tax paid when buying property or land over a certain price in Wales.",
+      "paymentDeadline": "30 days after completion",
+      "officialLink": "https://gov.wales/land-transaction-tax",
+      "exemptions": [
+        { "name": "Charities", "description": "Charities may claim relief when buying land and buildings for charitable purposes" },
+        { "name": "Social housing providers", "description": "Relief available for qualifying social housing providers" }
+      ],
+      "propertyTypes": [
+        { "id": "residential", "name": "Residential", "isDefault": true },
+        { "id": "commercial", "name": "Commercial/Non-residential" }
+      ],
+      "standard": [
+        { "threshold": 0, "rate": 0 },
+        { "threshold": 225000, "rate": 6 },
+        { "threshold": 400000, "rate": 7.5 },
+        { "threshold": 750000, "rate": 10 },
+        { "threshold": 1500000, "rate": 12 }
+      ],
+      "firstTimeBuyer": [
+        { "threshold": 0, "rate": 0 },
+        { "threshold": 225000, "rate": 6 },
+        { "threshold": 400000, "rate": 7.5 },
+        { "threshold": 750000, "rate": 10 },
+        { "threshold": 1500000, "rate": 12 }
+      ],
+      "additionalProperty": [
+        { "threshold": 0, "rate": 4 },
+        { "threshold": 225000, "rate": 10 },
+        { "threshold": 400000, "rate": 11.5 },
+        { "threshold": 750000, "rate": 14 },
+        { "threshold": 1500000, "rate": 16 }
+      ],
+      "commercial": [
+        { "threshold": 0, "rate": 0 },
+        { "threshold": 225000, "rate": 1 },
+        { "threshold": 250000, "rate": 5 },
+        { "threshold": 1000000, "rate": 6 }
+      ],
+      "historicalRates": [
+        {
+          "startDate": "2021-07-01",
+          "endDate": "2022-06-30",
+          "description": "Standard rates",
+          "standard": [
+            { "threshold": 0, "rate": 0 },
+            { "threshold": 180000, "rate": 3.5 },
+            { "threshold": 250000, "rate": 5 },
+            { "threshold": 400000, "rate": 7.5 },
+            { "threshold": 750000, "rate": 10 },
+            { "threshold": 1500000, "rate": 12 }
+          ]
+        },
+        {
+          "startDate": "2020-07-27",
+          "endDate": "2021-06-30",
+          "description": "COVID-19 LTT Holiday",
+          "standard": [
+            { "threshold": 0, "rate": 0 },
+            { "threshold": 250000, "rate": 5 },
+            { "threshold": 400000, "rate": 7.5 },
+            { "threshold": 750000, "rate": 10 },
+            { "threshold": 1500000, "rate": 12 }
+          ]
+        }
+      ],
+      "nonResidentSurcharge": 0
+    },
+    "northernIreland": {
+      "name": "Stamp Duty Land Tax (SDLT)",
+      "description": "A tax paid when purchasing property or land over a certain value in Northern Ireland.",
+      "paymentDeadline": "14 days after completion",
+      "officialLink": "https://www.gov.uk/stamp-duty-land-tax",
+      "exemptions": [
+        { "name": "First-time buyers", "description": "No tax on properties up to £425,000" },
+        { "name": "Property transfers due to divorce or dissolution of civil partnership", "description": "No tax payable" },
+        { "name": "Property less than £250,000", "description": "No tax payable on properties below this threshold" }
+      ],
+      "propertyTypes": [
+        { "id": "residential", "name": "Residential", "isDefault": true },
+        { "id": "commercial", "name": "Commercial/Non-residential" },
+        { "id": "mixedUse", "name": "Mixed Use" }
+      ],
+      "standard": [
+        { "threshold": 0, "rate": 0 },
+        { "threshold": 250000, "rate": 5 },
+        { "threshold": 925000, "rate": 10 },
+        { "threshold": 1500000, "rate": 12 }
+      ],
+      "firstTimeBuyer": [
+        { "threshold": 0, "rate": 0 },
+        { "threshold": 425000, "rate": 5 },
+        { "threshold": 925000, "rate": 10 },
+        { "threshold": 1500000, "rate": 12 }
+      ],
+      "additionalProperty": [
+        { "threshold": 0, "rate": 3 },
+        { "threshold": 250000, "rate": 8 },
+        { "threshold": 925000, "rate": 13 },
+        { "threshold": 1500000, "rate": 15 }
+      ],
+      "commercial": [
+        { "threshold": 0, "rate": 0 },
+        { "threshold": 150000, "rate": 2 },
+        { "threshold": 250000, "rate": 5 }
+      ],
+      "mixedUse": [
+        { "threshold": 0, "rate": 0 },
+        { "threshold": 150000, "rate": 2 },
+        { "threshold": 250000, "rate": 5 }
+      ],
+      "historicalRates": [
+        {
+          "startDate": "2021-07-01",
+          "endDate": "2022-09-30",
+          "description": "Standard rates",
+          "standard": [
+            { "threshold": 0, "rate": 0 },
+            { "threshold": 250000, "rate": 5 },
+            { "threshold": 925000, "rate": 10 },
+            { "threshold": 1500000, "rate": 12 }
+          ]
+        },
+        {
+          "startDate": "2020-07-08",
+          "endDate": "2021-06-30",
+          "description": "COVID-19 Stamp Duty Holiday",
+          "standard": [
+            { "threshold": 0, "rate": 0 },
+            { "threshold": 500000, "rate": 5 },
+            { "threshold": 925000, "rate": 10 },
+            { "threshold": 1500000, "rate": 12 }
+          ]
+        }
+      ],
+      "nonResidentSurcharge": 2
+    }
+  },
+  "en-IN": {
+    "maharashtra": {
+      "name": "Stamp Duty",
+      "description": "A tax levied by the Maharashtra government on property transactions.",
+      "paymentDeadline": "Before registration of property",
+      "officialLink": "https://www.igrs.maharashtra.gov.in/",
+      "exemptions": [
+        { "name": "Women buyers", "description": "1% concession for women buyers in urban areas" },
+        { "name": "First-time buyers", "description": "Reduced rate of 5% for first-time homebuyers" },
+        { "name": "Rural properties", "description": "Lower rates applicable in rural areas" }
+      ],
+      "propertyTypes": [
+        { "id": "residential", "name": "Residential", "isDefault": true },
+        { "id": "commercial", "name": "Commercial" },
+        { "id": "agricultural", "name": "Agricultural Land" }
+      ],
+      "standard": [
+        { "threshold": 0, "rate": 6 }
+      ],
+      "firstTimeBuyer": [
+        { "threshold": 0, "rate": 5 }
+      ],
+      "additionalProperty": [
+        { "threshold": 0, "rate": 6 }
+      ],
+      "commercial": [
+        { "threshold": 0, "rate": 6 }
+      ],
+      "agricultural": [
+        { "threshold": 0, "rate": 5 }
+      ],
+      "registrationFee": 30000,
+      "gst": {
+        "newProperty": 5,
+        "underConstruction": 12
+      },
+      "additionalCharges": [
+        { "name": "Metro Cess", "description": "1% additional cess in Mumbai, Pune, and Nagpur", "rate": 1 },
+        { "name": "Transfer Charges", "description": "Society transfer charges (varies by society)", "isVariable": true }
+      ],
+      "historicalRates": [
+        {
+          "startDate": "2021-09-01",
+          "endDate": "2022-12-31",
+          "description": "Standard rates",
+          "standard": [
+            { "threshold": 0, "rate": 6 }
+          ]
+        },
+        {
+          "startDate": "2020-09-01",
+          "endDate": "2021-08-31",
+          "description": "COVID-19 Relief",
+          "standard": [
+            { "threshold": 0, "rate": 3 }
+          ]
+        }
+      ],
+      "source": "https://www.igrs.maharashtra.gov.in/"
+    },
+    "karnataka": {
+      "name": "Stamp Duty",
+      "standard": [
+        { "threshold": 0, "rate": 5 }
+      ],
+      "firstTimeBuyer": [
+        { "threshold": 0, "rate": 3 }
+      ],
+      "additionalProperty": [
+        { "threshold": 0, "rate": 5 }
+      ],
+      "registrationFee": 1,
+      "registrationFeeCap": 15000,
+      "gst": {
+        "newProperty": 5,
+        "underConstruction": 12
+      },
+      "source": "https://karunadu.karnataka.gov.in/ksboard/"
+    },
+    "delhi": {
+      "name": "Stamp Duty",
+      "standard": [
+        { "threshold": 0, "rate": 6 }
+      ],
+      "firstTimeBuyer": [
+        { "threshold": 0, "rate": 4 }
+      ],
+      "additionalProperty": [
+        { "threshold": 0, "rate": 6 }
+      ],
+      "registrationFee": 1,
+      "registrationFeeCap": 20000,
+      "gst": {
+        "newProperty": 5,
+        "underConstruction": 12
+      },
+      "source": "https://revenue.delhi.gov.in/"
+    },
+    "tamilNadu": {
+      "name": "Stamp Duty",
+      "standard": [
+        { "threshold": 0, "rate": 7 }
+      ],
+      "firstTimeBuyer": [
+        { "threshold": 0, "rate": 7 }
+      ],
+      "additionalProperty": [
+        { "threshold": 0, "rate": 7 }
+      ],
+      "registrationFee": 1,
+      "registrationFeeCap": 30000,
+      "gst": {
+        "newProperty": 5,
+        "underConstruction": 12
+      },
+      "source": "https://tnreginet.gov.in/"
+    },
+    "telangana": {
+      "name": "Stamp Duty",
+      "standard": [
+        { "threshold": 0, "rate": 6 }
+      ],
+      "firstTimeBuyer": [
+        { "threshold": 0, "rate": 6 }
+      ],
+      "additionalProperty": [
+        { "threshold": 0, "rate": 6 }
+      ],
+      "registrationFee": 0.5,
+      "registrationFeeCap": 20000,
+      "gst": {
+        "newProperty": 5,
+        "underConstruction": 12
+      },
+      "source": "https://igrs.telangana.gov.in/"
+    },
+    "westBengal": {
+      "name": "Stamp Duty",
+      "standard": [
+        { "threshold": 0, "rate": 6 },
+        { "threshold": 10000000, "rate": 7 }
+      ],
+      "firstTimeBuyer": [
+        { "threshold": 0, "rate": 6 },
+        { "threshold": 10000000, "rate": 7 }
+      ],
+      "additionalProperty": [
+        { "threshold": 0, "rate": 6 },
+        { "threshold": 10000000, "rate": 7 }
+      ],
+      "registrationFee": 1,
+      "registrationFeeCap": 50000,
+      "gst": {
+        "newProperty": 5,
+        "underConstruction": 12
+      },
+      "source": "https://wbregistration.gov.in/"
+    },
+    "gujarat": {
+      "name": "Stamp Duty",
+      "standard": [
+        { "threshold": 0, "rate": 4.9 }
+      ],
+      "firstTimeBuyer": [
+        { "threshold": 0, "rate": 4.9 }
+      ],
+      "additionalProperty": [
+        { "threshold": 0, "rate": 4.9 }
+      ],
+      "registrationFee": 1,
+      "registrationFeeCap": 30000,
+      "gst": {
+        "newProperty": 5,
+        "underConstruction": 12
+      },
+      "source": "https://igrsgujarat.gov.in/"
+    },
+    "punjab": {
+      "name": "Stamp Duty",
+      "standard": [
+        { "threshold": 0, "rate": 7 }
+      ],
+      "firstTimeBuyer": [
+        { "threshold": 0, "rate": 5 }
+      ],
+      "additionalProperty": [
+        { "threshold": 0, "rate": 7 }
+      ],
+      "registrationFee": 1,
+      "registrationFeeCap": 30000,
+      "gst": {
+        "newProperty": 5,
+        "underConstruction": 12
+      },
+      "source": "https://punjabrevenue.nic.in/"
+    },
+    "rajasthan": {
+      "name": "Stamp Duty",
+      "standard": [
+        { "threshold": 0, "rate": 5 }
+      ],
+      "firstTimeBuyer": [
+        { "threshold": 0, "rate": 4 }
+      ],
+      "additionalProperty": [
+        { "threshold": 0, "rate": 5 }
+      ],
+      "registrationFee": 1,
+      "registrationFeeCap": 25000,
+      "gst": {
+        "newProperty": 5,
+        "underConstruction": 12
+      },
+      "source": "https://igrs.rajasthan.gov.in/"
+    },
+    "kerala": {
+      "name": "Stamp Duty",
+      "standard": [
+        { "threshold": 0, "rate": 8 }
+      ],
+      "firstTimeBuyer": [
+        { "threshold": 0, "rate": 8 }
+      ],
+      "additionalProperty": [
+        { "threshold": 0, "rate": 8 }
+      ],
+      "registrationFee": 2,
+      "registrationFeeCap": 30000,
+      "gst": {
+        "newProperty": 5,
+        "underConstruction": 12
+      },
+      "source": "https://www.keralaregistration.gov.in/"
+    }
+  },
+  "en-US": {
+    "california": {
+      "name": "Transfer Tax",
+      "description": "A tax imposed by counties and cities when property changes ownership in California.",
+      "paymentDeadline": "At time of recording the deed",
+      "officialLink": "https://www.cdtfa.ca.gov/taxes-and-fees/rtc.htm",
+      "exemptions": [
+        { "name": "Gifts", "description": "Transfers without consideration may be exempt" },
+        { "name": "Foreclosures", "description": "Transfers through foreclosure may be exempt" },
+        { "name": "Bankruptcy", "description": "Transfers in bankruptcy proceedings may be exempt" }
+      ],
+      "propertyTypes": [
+        { "id": "residential", "name": "Residential", "isDefault": true },
+        { "id": "commercial", "name": "Commercial" }
+      ],
+      "standard": [
+        { "threshold": 0, "rate": 0.11 }
+      ],
+      "firstTimeBuyer": [
+        { "threshold": 0, "rate": 0.11 }
+      ],
+      "additionalProperty": [
+        { "threshold": 0, "rate": 0.11 }
+      ],
+      "commercial": [
+        { "threshold": 0, "rate": 0.11 }
+      ],
+      "additionalCharges": [
+        { "name": "City Transfer Tax", "description": "Additional tax imposed by cities (varies by city)", "isVariable": true },
+        { "name": "Recording Fees", "description": "Fees for recording documents with the county", "isVariable": true }
+      ],
+      "source": "https://www.cdtfa.ca.gov/taxes-and-fees/rtc.htm"
+    },
+    "newyork": {
+      "name": "Transfer Tax",
+      "description": "A tax imposed on the transfer of real property in New York State.",
+      "paymentDeadline": "At closing",
+      "officialLink": "https://www.tax.ny.gov/pit/property/realtytransfer/rptidx.htm",
+      "exemptions": [
+        { "name": "Government entities", "description": "Transfers to government entities are exempt" },
+        { "name": "Foreclosures", "description": "Certain foreclosure transfers may be exempt" }
+      ],
+      "propertyTypes": [
+        { "id": "residential", "name": "Residential", "isDefault": true },
+        { "id": "commercial", "name": "Commercial" }
+      ],
+      "standard": [
+        { "threshold": 0, "rate": 0.4 },
+        { "threshold": 1000000, "rate": 1.4 }
+      ],
+      "firstTimeBuyer": [
+        { "threshold": 0, "rate": 0.4 },
+        { "threshold": 1000000, "rate": 1.4 }
+      ],
+      "additionalProperty": [
+        { "threshold": 0, "rate": 0.4 },
+        { "threshold": 1000000, "rate": 1.4 }
+      ],
+      "commercial": [
+        { "threshold": 0, "rate": 0.4 },
+        { "threshold": 1000000, "rate": 1.4 }
+      ],
+      "additionalCharges": [
+        { "name": "NYC Transfer Tax", "description": "Additional tax for properties in New York City", "rate": 1.0 },
+        { "name": "Mansion Tax", "description": "Additional tax on residential properties over $1 million", "rate": 1.0 }
+      ],
+      "source": "https://www.tax.ny.gov/pit/property/realtytransfer/rptidx.htm"
+    },
+    "florida": {
+      "name": "Documentary Stamp Tax",
+      "description": "A tax levied on documents that transfer interest in Florida real property.",
+      "paymentDeadline": "At time of recording the deed",
+      "officialLink": "https://floridarevenue.com/taxes/taxesfees/Pages/doc_stamp.aspx",
+      "exemptions": [
+        { "name": "Gifts", "description": "Transfers between spouses or certain family members may be exempt" },
+        { "name": "Court orders", "description": "Transfers pursuant to court orders may be exempt" }
+      ],
+      "propertyTypes": [
+        { "id": "residential", "name": "Residential", "isDefault": true },
+        { "id": "commercial", "name": "Commercial" }
+      ],
+      "standard": [
+        { "threshold": 0, "rate": 0.7 }
+      ],
+      "firstTimeBuyer": [
+        { "threshold": 0, "rate": 0.7 }
+      ],
+      "additionalProperty": [
+        { "threshold": 0, "rate": 0.7 }
+      ],
+      "commercial": [
+        { "threshold": 0, "rate": 0.7 }
+      ],
+      "additionalCharges": [
+        { "name": "Surtax", "description": "Some counties impose an additional surtax", "isVariable": true },
+        { "name": "Recording Fees", "description": "Fees for recording documents with the county", "isVariable": true }
+      ],
+      "source": "https://floridarevenue.com/taxes/taxesfees/Pages/doc_stamp.aspx"
+    }
+  }
+}

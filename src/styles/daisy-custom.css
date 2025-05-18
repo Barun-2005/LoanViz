@@ -1,0 +1,79 @@
+/* DaisyUI Custom Styles */
+
+@layer components {
+  /* Custom button styles */
+  .btn-loanviz-primary {
+    @apply btn btn-primary bg-gradient-to-r from-loanviz-primary to-loanviz-secondary hover:from-loanviz-primary/90 hover:to-loanviz-secondary/90;
+  }
+
+  .btn-loanviz-secondary {
+    @apply btn btn-secondary bg-gradient-to-r from-loanviz-secondary to-loanviz-accent hover:from-loanviz-secondary/90 hover:to-loanviz-accent/90 text-white dark:text-white relative z-10;
+  }
+
+  .btn-loanviz-accent {
+    @apply btn btn-accent bg-gradient-to-r from-loanviz-accent to-loanviz-highlight hover:from-loanviz-accent/90 hover:to-loanviz-highlight/90;
+  }
+
+  .btn-loanviz-outline {
+    @apply btn btn-outline border-loanviz-primary text-loanviz-primary hover:bg-loanviz-primary hover:text-white;
+  }
+
+  /* Custom card styles */
+  .card-loanviz {
+    @apply card bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-all duration-300;
+  }
+
+  /* True glassmorphism effect */
+  .card-loanviz-glass {
+    @apply card bg-white/70 dark:bg-gray-800/60 backdrop-blur-md shadow-lg
+           hover:shadow-xl transition-all duration-300
+           border border-white/20 dark:border-gray-700/30
+           hover:bg-white/80 dark:hover:bg-gray-800/70;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+  }
+
+  .card-loanviz-bordered {
+    @apply card bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-md hover:shadow-lg transition-all duration-300;
+  }
+
+  /* Custom input styles */
+  .input-loanviz {
+    @apply input bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200 border border-gray-300 dark:border-gray-600 focus:border-loanviz-primary dark:focus:border-loanviz-secondary focus:ring-2 focus:ring-loanviz-primary/20 dark:focus:ring-loanviz-secondary/20;
+  }
+
+  .select-loanviz {
+    @apply select bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200 border border-gray-300 dark:border-gray-600 focus:border-loanviz-primary dark:focus:border-loanviz-secondary focus:ring-2 focus:ring-loanviz-primary/20 dark:focus:ring-loanviz-secondary/20;
+  }
+
+  .checkbox-loanviz {
+    @apply checkbox checkbox-primary;
+  }
+
+  .radio-loanviz {
+    @apply radio radio-primary;
+  }
+
+  .toggle-loanviz {
+    @apply toggle toggle-primary;
+  }
+
+  /* Only keeping the components that are actually used in the application */
+
+  /* Custom affordability calculator styles */
+  .affordability-calculator {
+    @apply pb-16 relative;
+  }
+
+  .affordability-calculator .btn-loanviz-secondary {
+    @apply mb-4 relative z-20;
+  }
+
+  /* Fix for the reset button */
+  .affordability-calculator .card {
+    @apply overflow-visible;
+  }
+
+  .affordability-calculator .card-body {
+    @apply overflow-visible;
+  }
+}

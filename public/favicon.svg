@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @media (prefers-color-scheme: dark) {
+      #background {
+        fill: #6366F1;
+      }
+      #coin {
+        stroke: #F1F5F9;
+      }
+      #dollar {
+        stroke: #F1F5F9;
+      }
+    }
+    @media (prefers-color-scheme: light) {
+      #background {
+        fill: #3B82F6;
+      }
+      #coin {
+        stroke: #FFFFFF;
+      }
+      #dollar {
+        stroke: #FFFFFF;
+      }
+    }
+  </style>
+  
+  <!-- Background -->
+  <rect id="background" width="512" height="512" rx="128" fill="#3B82F6"/>
+  
+  <!-- Coin -->
+  <circle id="coin" cx="256" cy="256" r="160" stroke-width="24" stroke="#FFFFFF" fill="none"/>
+  
+  <!-- Dollar sign -->
+  <path id="dollar" d="M256 144V368M208 192H288C317.3 192 340 214.7 340 244C340 273.3 317.3 296 288 296H224C194.7 296 172 318.7 172 348C172 377.3 194.7 400 224 400H304" stroke="#FFFFFF" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

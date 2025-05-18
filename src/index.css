@@ -1,0 +1,155 @@
+@import './styles/glassmorphism.css';
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+  transition: all 0.3s ease;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+/* Base button styles - these will be overridden by glassmorphic styles when used */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.6);
+}
+
+/* Animation for highlighting results section */
+@keyframes highlight-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(79, 70, 229, 0);
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(-5px);
+  }
+  30% {
+    box-shadow: 0 0 25px 8px rgba(79, 70, 229, 0.4);
+  }
+  50% {
+    transform: translateY(0);
+    box-shadow: 0 0 15px 5px rgba(99, 102, 241, 0.35);
+  }
+  70% {
+    box-shadow: 0 0 20px 7px rgba(79, 70, 229, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(79, 70, 229, 0);
+    transform: translateY(0);
+  }
+}
+
+.highlight-pulse {
+  animation: highlight-pulse 1.5s ease-in-out;
+  position: relative;
+  z-index: 10;
+}
+
+/* Text shadow effects */
+.text-shadow-glow {
+  text-shadow: 0 0 10px rgba(59, 130, 246, 0.5), 0 0 20px rgba(59, 130, 246, 0.3);
+}
+
+.text-shadow-indigo {
+  text-shadow: 0 0 10px rgba(79, 70, 229, 0.5), 0 0 20px rgba(99, 102, 241, 0.3);
+}
+
+/* Confetti animation styles */
+.confetti-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.confetti {
+  position: absolute;
+  will-change: transform;
+}
+
+/* Financial animation styles */
+@keyframes float-money {
+  0% {
+    transform: translateY(0) rotate(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.float-money {
+  animation: float-money 10s ease-out forwards;
+  position: absolute;
+  z-index: 50;
+  pointer-events: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

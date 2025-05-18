@@ -1,0 +1,61 @@
+.chart-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0;
+  overflow: visible;
+}
+
+.chart-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.chart-canvas {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.chart-legend {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.chart-legend > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  gap: 4px;
+}
+
+@media (max-width: 768px) {
+  .chart-legend > div {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.currency-text-symbol {
+  display: inline-block;
+  margin-right: 2px;
+}
+
+/* Outside value display */
+.chart-wrapper .mt-3.mb-2 {
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+}

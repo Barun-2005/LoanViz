@@ -1,0 +1,165 @@
+/* Modern UI Components Styles */
+
+/* GlassCard */
+.shadow-glow {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+.shadow-glow-dark {
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
+}
+
+/* StyledSlider */
+.slider-container {
+  position: relative;
+  width: 100%;
+  padding: 1.5rem 0;
+}
+
+.slider-track {
+  position: relative;
+  height: 6px;
+  width: 100%;
+  background-color: rgba(229, 231, 235, 0.5);
+  border-radius: 9999px;
+  cursor: pointer;
+}
+
+.slider-fill {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 9999px;
+}
+
+.slider-thumb {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid;
+  cursor: grab;
+  z-index: 10;
+}
+
+.slider-thumb:active {
+  cursor: grabbing;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.slider-value-tooltip {
+  position: absolute;
+  transform: translateX(-50%);
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 20;
+  /* Ensure tooltip doesn't affect layout */
+  top: -35px;
+  left: 50%;
+}
+
+.slider-helpers {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  color: #6b7280;
+}
+
+/* Animations */
+@keyframes neon-pulse {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.5), 0 0 10px rgba(59, 130, 246, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.8), 0 0 20px rgba(59, 130, 246, 0.5);
+  }
+}
+
+.animate-neon-pulse {
+  animation: neon-pulse 2s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.2) 25%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 3s infinite;
+}
+
+.animate-shimmer-text {
+  background: linear-gradient(
+    90deg,
+    currentColor 0%,
+    rgba(255, 255, 255, 0.8) 50%,
+    currentColor 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 3s infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+@keyframes bounce-subtle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+.animate-bounce-subtle {
+  animation: bounce-subtle 0.5s ease-in-out;
+}
+
+.text-shadow-glow {
+  text-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+}
+
+.text-shadow-glow-light {
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+/* Dark mode adjustments */
+.dark .slider-track {
+  background-color: rgba(55, 65, 81, 0.5);
+}
+
+.dark .slider-thumb {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.dark .slider-helpers {
+  color: #9ca3af;
+}
