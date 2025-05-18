@@ -2,6 +2,8 @@
 
 A financial calculator that helps visualize loan payments, mortgages, and other financial scenarios.
 
+![LoanViz Dashboard](screenshots/dashboard.png)
+
 ## What's this?
 
 I built LoanViz to solve my own frustrations with existing mortgage calculators. Most tools out there don't give you a clear picture of how your payments break down over time or let you compare different scenarios easily.
@@ -32,6 +34,17 @@ This tool helps with:
 - Interactive charts and visualizations
 - PDF export for amortization schedules
 - Multiple currency support
+
+## Screenshots
+
+### Amortization Schedule with Chart
+![Amortization Chart](screenshots/amortization.png)
+
+### Loan Comparison Tool
+![Loan Comparison](screenshots/comparison.png)
+
+### Mobile View
+![Mobile View](screenshots/mobile.png)
 
 ## Live Demo
 
