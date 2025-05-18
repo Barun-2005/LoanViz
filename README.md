@@ -44,7 +44,7 @@ This tool helps with:
 ![Loan Comparison](screenshots/comparison.jpg)
 
 ### Mobile View
-![Mobile View](screenshots/mobile.jpg)
+![Mobile View](screenshots/mobile_small.jpg)
 
 ## Live Demo
 
