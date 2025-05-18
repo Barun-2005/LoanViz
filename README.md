@@ -2,7 +2,7 @@
 
 A financial calculator that helps visualize loan payments, mortgages, and other financial scenarios.
 
-![LoanViz Dashboard](screenshots/dashboard.png)
+![LoanViz Dashboard](screenshots/dashboard.jpg)
 
 ## What's this?
 
@@ -38,13 +38,13 @@ This tool helps with:
 ## Screenshots
 
 ### Amortization Schedule with Chart
-![Amortization Chart](screenshots/amortization.png)
+![Amortization Chart](screenshots/amortization.jpg)
 
 ### Loan Comparison Tool
-![Loan Comparison](screenshots/comparison.png)
+![Loan Comparison](screenshots/comparison.jpg)
 
 ### Mobile View
-![Mobile View](screenshots/mobile.png)
+![Mobile View](screenshots/mobile.jpg)
 
 ## Live Demo
 
