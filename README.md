@@ -1,12 +1,61 @@
-# React + Vite
+# LoanViz
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A financial calculator that helps visualize loan payments, mortgages, and other financial scenarios.
 
-Currently, two official plugins are available:
+## What's this?
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+I built LoanViz to solve my own frustrations with existing mortgage calculators. Most tools out there don't give you a clear picture of how your payments break down over time or let you compare different scenarios easily.
 
-## Expanding the ESLint configuration
+This tool helps with:
+- Basic loan calculations
+- Mortgage payment breakdowns
+- Amortization schedules with visual charts
+- Comparing different loan scenarios
+- Stamp duty calculations (UK/India)
+- Debt consolidation planning
+- Early repayment calculations
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+- React 19
+- Vite
+- TailwindCSS
+- DaisyUI
+- Chart libraries (ApexCharts, Recharts)
+- Framer Motion for animations
+
+## Features
+
+- Responsive design that works on mobile and desktop
+- Dark/light mode
+- Region detection for UK/India
+- Interactive charts and visualizations
+- PDF export for amortization schedules
+- Multiple currency support
+
+## Live Demo
+
+Check out the live version: [https://loanviz.netlify.app](https://loanviz.netlify.app)
+
+## Running Locally
+
+```bash
+# Clone the repo
+git clone https://github.com/Barun-2005/LoanViz.git
+
+# Install dependencies
+npm install
+
+# Start dev server
+npm run dev
+```
+
+## Future Plans
+
+I'm planning to add:
+- More international regions
+- Investment calculators
+- Retirement planning tools
+- Budget integration
+
+Feel free to suggest features or report bugs!

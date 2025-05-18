@@ -8,8 +8,5 @@ export default defineConfig({
   define: {
     // Make sure environment variables are properly stringified
     'import.meta.env.VITE_BUILD_DATE': JSON.stringify(process.env.VITE_BUILD_DATE)
-  },
-  // Base path for GitHub Pages deployment
-  // Change this to '/<repository-name>/' when deploying to GitHub Pages
-  base: '/loanviz/'
+  }
 })
